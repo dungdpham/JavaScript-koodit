@@ -1,3 +1,3 @@
 # module3-starters
 
-Green 'Code' button up there -> Download ZIP
+Module 3 solutions to assignments
