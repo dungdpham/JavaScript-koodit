@@ -1,0 +1,112 @@
+@font-face {
+    font-family: Verdana;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+html {
+    font-family: Verdana, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.body-header {
+    text-align: center;
+}
+
+.form-input {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 1rem 2rem;
+    text-align: center;
+    margin: 0 1rem 0 1rem;
+    border-style: none;
+    border-radius: 20px;
+}
+
+#query {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+#submit {
+    width: 20%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+#api-info {
+    font-size: small;
+}
+
+ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin-top: 0;
+}
+
+ul li {
+    border: dimgray;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#link {
+    font-style: italic;
+}
+
+#genre {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: small;
+}
+
+iframe {
+    width: 100vh;
+    height: 80vh;
+}
+
+#modal {
+    padding-right: 0;
+}
+
+#close {
+    cursor: pointer;
+    position: relative;
+    float: right;
+    top: -1rem;
+    right: 0.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        width: 80%;
+    }
+}

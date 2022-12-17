@@ -2,21 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Module4: TVMaze API</title>
+    <title>TV Show Look-up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
     <script src="Module4.js" defer></script>
 </head>
 <body>
-    <h2>Testing TVMaze</h2>
-    <form action="https://api.tvmaze.com/search/shows">
-        <input id="query" name="q" type="text">
+<div class="container">
+    <header class="body-header">
+        <h1>TV Show Look-up</h1>
+    </header>
+    <main class="body-main">
+    <form class="form-input" action="https://api.tvmaze.com/search/shows">
+        <input id="query" name="q" type="text" placeholder="Enter keywords to start searching...">
         <input id="submit" type="submit" value="Search">
+        <div id="api-info">Powered by TVMaze API</div>
     </form>
     <div id="results">
-        <ul id="ulist"></ul>
+        <ul id="ulist">
+
+        </ul>
     </div>
     <dialog id="modal">
         <iframe id="iframe"></iframe>
-        <span id="x" style="cursor: pointer">&#x2715;</span>
+        <span id="close">&#x2715;</span>
     </dialog>
+    </main>
+</div>
 </body>
 </html>

@@ -59,17 +59,18 @@ document.getElementById('submit').addEventListener('click', async function(evt) 
     for (const data of jsonData) {
         const li = document.createElement('li');
 
-        const name = document.createElement('p');
+        const name = document.createElement('h2');
         name.innerHTML = data.show.name;
         li.appendChild(name);
 
-        const genre = document.createElement('p');
+        const genre = document.createElement('div');
+        genre.id = "genre";
         genre.innerHTML = data.show.genres.join(" | ");
         li.appendChild(genre);
 
-
         const link = document.createElement('a');
-        link.innerHTML = "Link to details";
+        link.id = "link";
+        link.innerHTML = "Link to TVMaze listing";
         link.target = "_self";
         link.href = "#";
         li.appendChild(link);
@@ -77,15 +78,14 @@ document.getElementById('submit').addEventListener('click', async function(evt) 
         const modal = document.getElementById('modal');
         const iframe = document.getElementById('iframe');
 
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (evt) => {
+            evt.preventDefault();
             modal.showModal();
             iframe.src = data.show.url;
             iframe.id = "iframe";
-            iframe.width = 800;
-            iframe.height = 600;
             iframe.title = data.show.name;
         })
-        document.getElementById('x').addEventListener('click', () => {
+        document.getElementById('close').addEventListener('click', () => {
             modal.close();
         })
 
@@ -101,7 +101,8 @@ document.getElementById('submit').addEventListener('click', async function(evt) 
         figure.appendChild(caption);
         li.appendChild(figure);
 
-        const desc = document.createElement('p');
+        const desc = document.createElement('div');
+        desc.id = "desc";
         desc.innerHTML = data.show.summary;
         li.appendChild(desc);
 
