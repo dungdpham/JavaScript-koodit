@@ -37,12 +37,25 @@ body {
     margin: auto;
     text-align: center;
     margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    font-size: medium;
 }
 
 #submit {
+    font-size: medium;
     width: 20%;
     margin: auto;
     margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-width: thin;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+}
+
+#submit:hover {
+    background-color: blue;
 }
 
 #api-info {
