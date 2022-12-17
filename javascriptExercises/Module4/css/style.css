@@ -50,12 +50,12 @@ body {
     border-radius: 5px;
     border-width: thin;
     cursor: pointer;
-    background-color: dodgerblue;
+    background-color: blue;
     color: white;
 }
 
 #submit:hover {
-    background-color: blue;
+    background-color: mediumblue;
 }
 
 #api-info {
